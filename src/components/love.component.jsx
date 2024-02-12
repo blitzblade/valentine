@@ -43,11 +43,12 @@ const Love = () => {
     return (
         <>
         <div style={{margin: "2 rem"}}>
+            
+            {answer == "" && <div>
             <h1 className="white-shadow">Will you be my Valentine? 😍</h1>
-            <div>
                 <button onClick={sayYes}>YES</button> 
                 <button onClick={sayNo}>NO</button>
-            </div>
+            </div>}
 
             <div className="memoji">
             <img src={images[answer]} />
