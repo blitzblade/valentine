@@ -1,0 +1,40 @@
+/* Base styles */
+.white-shadow {
+    text-shadow: 0.5px 0.5px 1px white;
+    font-size: 5rem; /* Use scalable units */
+  }
+  
+  .memoji img {
+    max-width: 100%; /* Ensure images are not larger than their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) { /* Adjust for tablets and below */
+    .white-shadow {
+      font-size: 1.5rem; /* Smaller text for smaller screens */
+    }
+  
+    .memoji div {
+      font-size: calc(1rem + 1vw); /* Adjust font size based on viewport width */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Adjust for mobile phones */
+    .white-shadow {
+      font-size: 1.2rem; /* Even smaller text for mobile */
+    }
+  
+    /* Adjust layout for buttons if necessary */
+    div > button {
+      width: 100%; /* Full width buttons for smaller screens */
+      margin: 0.5rem 0; /* Add some margin for better tapability */
+    }
+  }
+  
+
+  body {
+    background-color: black;
+    color: #cc0000;
+    
+  }
