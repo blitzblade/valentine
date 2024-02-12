@@ -50,11 +50,13 @@ const Love = () => {
                 <button onClick={sayNo}>NO</button>
             </div>}
 
+            {answer != "" && 
             <div className="memoji">
-            <img src={images[answer]} />
-            <div className="" style={{fontSize: `${fontSize + 3*noCount}px`}}>{message}</div>
-            {noCount > 0 && <div><button onClick={sayNo}>YES I'm sure</button><button onClick={clear}>I'm not sure</button></div> }
+                <img src={images[answer]} />
+                <div className="" style={{fontSize: `${fontSize + 3*noCount}px`}}>{message}</div>
+                {noCount > 0 && <div><button onClick={sayNo}>YES I'm sure</button><button onClick={clear}>I'm not sure</button></div> }
             </div>
+            }
         </div>
         {confetti && <Confetti />}
         </>
